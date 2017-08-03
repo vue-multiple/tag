@@ -1,0 +1,100 @@
+
+.vm-tag {
+  background-color: @tag-fill;
+  display: inline-block;
+  padding: @tag-padding;
+  height: 24px;
+  line-height: 24px;
+  font-size: @tag-font-size;
+  color: @tag-color;
+  border-radius: @tag-border-radius;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  white-space: nowrap;
+
+  & .vm-icon-close {
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    font-size: 12px;
+    transform: scale(.75, .75);
+    height: 18px;
+    width: 18px;
+    line-height: 18px;
+    vertical-align: middle;
+    top: -1px;
+    right: -2px;
+
+    &:hover {
+      background-color: @color-white;
+      color: @tag-fill;
+    }
+  }
+
+  &--gray {
+    background-color: @tag-gray-fill;
+    border-color: @tag-gray-border;
+    color: @tag-gray-color;
+    .hit {
+      border-color: @tag-gray-color;
+    }
+
+    & .vm-tag__close:hover {
+      background-color: @tag-gray-color;
+      color: @color-white;
+    }
+  }
+  &--primary {
+    background-color: @tag-primary-fill;
+    border-color: @tag-primary-border;
+    color: @tag-primary-color;
+    .hit {
+      border-color: @tag-primary-color;
+    }
+
+    & .vm-tag__close:hover {
+      background-color: @tag-primary-color;
+      color: @color-white;
+    }
+  }
+  &--success {
+    background-color: @tag-success-fill;
+    border-color: @tag-success-border;
+    color: @tag-success-color;
+    &.hit {
+      border-color: @tag-success-color;
+    }
+
+    & .vm-tag__close:hover {
+      background-color: @tag-success-color;
+      color: @color-white;
+    }
+  }
+  &--warning {
+    background-color: @tag-warning-fill;
+    border-color: @tag-warning-border;
+    color: @tag-warning-color;
+    .hit {
+      border-color: @tag-warning-color;
+    }
+
+    & .vm-tag__close:hover {
+      background-color: @tag-warning-color;
+      color: @color-white;
+    }
+  }
+  &--danger {
+    background-color: @tag-danger-fill;
+    border-color: @tag-danger-border;
+    color: @tag-danger-color;
+    .hit {
+      border-color: @tag-danger-color;
+    }
+
+    & .vm-tag__close:hover {
+      background-color: @tag-danger-color;
+      color: @color-white;
+    }
+  }
+}
