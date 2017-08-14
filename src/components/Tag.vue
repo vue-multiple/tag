@@ -2,7 +2,7 @@
     <transition :name="closeTransition ? '' : 'el-zoom-in-center'">
         <span class="vm-tag" :class="[type ? 'vm-tag--' + type : '', {'hit': hit}, tagclass]" :style="{backgroundColor: color}">
             <slot></slot>
-            <i class="vm-tag__close vm-icon-close" v-if="closable" @click="handleClose"></i>
+            <i class="vm-tag__close vm-tag-icon-close" v-if="closable" @click="handleClose"></i>
         </span>
     </transition>
 </template>
